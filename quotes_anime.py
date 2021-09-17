@@ -55,13 +55,12 @@ class Ui_Quotes(object):
         self.label_2.setText(_translate("Quotes", 'Character'))
         self.label.setText(_translate("Quotes", 'Quotes'))
         self.pushButton.setText(_translate("Quotes", "New"))
-
-    def clicked(self, Quotes):
+    
+    def clicked(self):
         response = requests.get("https://animechan.vercel.app/api/quotes")
 
         response = response.json()
-        response = response[1]
-
+        response = response[i]
         anime = response['anime']
         char = response['character']
         quote = response['quote']
@@ -69,7 +68,6 @@ class Ui_Quotes(object):
         self.label_3.setText(_translate("Quotes", anime))
         self.label_2.setText(_translate("Quotes", char))
         self.label.setText(_translate("Quotes", quote))
-
 
 
 if __name__ == "__main__":
