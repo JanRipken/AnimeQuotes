@@ -60,7 +60,7 @@ class Ui_Quotes(object):
         response = requests.get("https://animechan.vercel.app/api/quotes")
 
         response = response.json()
-        response = response[i]
+        response = response[1]
         anime = response['anime']
         char = response['character']
         quote = response['quote']
