@@ -51,9 +51,9 @@ class Ui_Quotes(object):
     def retranslateUi(self, Quotes):
         _translate = QtCore.QCoreApplication.translate
         Quotes.setWindowTitle(_translate("Quotes", "Quotes"))
-        self.label_3.setText(_translate("Quotes", ''))
-        self.label_2.setText(_translate("Quotes", ''))
-        self.label.setText(_translate("Quotes", ''))
+        self.label_3.setText(_translate("Quotes", 'Anime'))
+        self.label_2.setText(_translate("Quotes", 'Character'))
+        self.label.setText(_translate("Quotes", 'Quotes'))
         self.pushButton.setText(_translate("Quotes", "New"))
 
     def clicked(self, Quotes):
